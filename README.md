@@ -40,3 +40,9 @@ section3 -> section4<br/>
 section4 -> master<br/>
 So if you make any changes to section1, make sure you merge it with section2, and then section2 with section3, section3 with section4 and section4 to master.
 This will allow us to maintain the continuity of the project from one section to another.
+
+<h4>Things to consider</h4>
+In the list view, date is shown as long value. Showing proper date will require the use of ViewBinder and might be given as an advanced exercise.
+Use of CustomViewBinder here: http://enjoyandroid.wordpress.com/2012/03/12/customizing-simple-cursor-adapter/
+We can use a DatePicker to indicate the date of the expense. Time and effort(although not significant) for adding date field makes it an advanced exercise.
+ 
