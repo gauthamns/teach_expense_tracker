@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 		int year = datePicker.getYear();
 
 		// Show in a toast message using Toast.
-		String text = "Amount: " + amountStr + "\n Note: " + note + "\n Date: "
+		String text = "Amount: " + amountStr + "\nNote: " + note + "\nDate: "
 				+ year + "/" + month + "/" + day;
 		Toast.makeText(this, text, Toast.LENGTH_LONG).show();
 	}
