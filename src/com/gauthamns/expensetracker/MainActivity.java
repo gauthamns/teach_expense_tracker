@@ -1,13 +1,12 @@
 package com.gauthamns.expensetracker;
 
-import java.util.Calendar;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -35,18 +34,21 @@ public class MainActivity extends Activity {
 		String amountStr = amountEdit.getText().toString();
 		String note = noteEdit.getText().toString();
 
-		Calendar cal = Calendar.getInstance();
-		cal.setTimeInMillis(System.currentTimeMillis());
+		// Get double of amount.
+		if (amountStr != null) {
+			Toast.makeText(this, "Please enter the amount", Toast.LENGTH_SHORT)
+					.show();
+			return;
+		}
 
-		// Show in a toast message using Toast.
-		String text = "Amount: " + amountStr + "\nNote: " + note + "\nDate: "
-				+ cal.getTime().toString();
-		// Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+		double amount = Double.valueOf(amountStr);
 
+		// Show Expenses in ShowActivity.
 		Intent i = new Intent(this, ShowActivity.class);
-		i.putExtra("amount", amountStr);
+		i.putExtra("amount", amount);
 		i.putExtra("note", note);
-
+		i.putExtra("date", System.currentTimeMillis());
+		startActivity(i);
 	}
 
 	@Override
