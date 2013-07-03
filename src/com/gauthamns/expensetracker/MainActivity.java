@@ -1,11 +1,12 @@
 package com.gauthamns.expensetracker;
 
+import java.util.Calendar;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.DatePicker;
 import android.widget.EditText;
 
 public class MainActivity extends Activity {
@@ -28,29 +29,24 @@ public class MainActivity extends Activity {
 	public void onSaveExpense(View v) {
 		// Obtain the views.
 		EditText amountEdit = (EditText) findViewById(R.id.editText1);
-		EditText noteEdit = (EditText) findViewById(R.id.editText3);
-		DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker1);
+		EditText noteEdit = (EditText) findViewById(R.id.editText2);
 
 		// Obtain data from the views
 		String amountStr = amountEdit.getText().toString();
 		String note = noteEdit.getText().toString();
-		int day = datePicker.getDayOfMonth();
-		int month = datePicker.getMonth();
-		int year = datePicker.getYear();
+
+		Calendar cal = Calendar.getInstance();
+		cal.setTimeInMillis(System.currentTimeMillis());
 
 		// Show in a toast message using Toast.
 		String text = "Amount: " + amountStr + "\nNote: " + note + "\nDate: "
-				+ year + "/" + month + "/" + day;
+				+ cal.getTime().toString();
+		// Toast.makeText(this, text, Toast.LENGTH_LONG).show();
 
-		// Send the data to ShowActivity through an intent.
 		Intent i = new Intent(this, ShowActivity.class);
 		i.putExtra("amount", amountStr);
 		i.putExtra("note", note);
-		i.putExtra("day", day);
-		i.putExtra("month", month);
-		i.putExtra("year", year);
 
-		// Toast.makeText(this, text, Toast.LENGTH_LONG).show();
 	}
 
 	@Override

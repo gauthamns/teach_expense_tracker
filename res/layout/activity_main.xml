@@ -22,14 +22,6 @@
 			android:text="Amount"
 			android:textSize="20dp" />
 
-		<DatePicker
-			android:id="@+id/datePicker1"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_below="@+id/editText3"
-			android:layout_centerHorizontal="true"
-			android:layout_marginTop="8dp" />
-
 		<EditText
 			android:id="@+id/editText1"
 			android:layout_width="wrap_content"
@@ -44,15 +36,15 @@
 		</EditText>
 
 		<EditText
-			android:id="@+id/editText3"
+			android:id="@+id/editText2"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_below="@+id/textView3"
+			android:layout_below="@+id/textView2"
 			android:layout_marginTop="8dp"
 			android:inputType="textMultiLine" />
 
 		<TextView
-			android:id="@+id/textView3"
+			android:id="@+id/textView2"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_alignLeft="@+id/textView1"
@@ -65,7 +57,7 @@
 			android:id="@+id/button1"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_below="@+id/datePicker1"
+			android:layout_below="@+id/editText2"
 			android:layout_centerHorizontal="true"
 			android:layout_marginTop="8dp"
 			android:onClick="onSaveExpense"
