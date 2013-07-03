@@ -1,12 +1,12 @@
 package com.gauthamns.expensetracker;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -41,7 +41,16 @@ public class MainActivity extends Activity {
 		// Show in a toast message using Toast.
 		String text = "Amount: " + amountStr + "\nNote: " + note + "\nDate: "
 				+ year + "/" + month + "/" + day;
-		Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+
+		// Send the data to ShowActivity through an intent.
+		Intent i = new Intent(this, ShowActivity.class);
+		i.putExtra("amount", amountStr);
+		i.putExtra("note", note);
+		i.putExtra("day", day);
+		i.putExtra("month", month);
+		i.putExtra("year", year);
+
+		// Toast.makeText(this, text, Toast.LENGTH_LONG).show();
 	}
 
 	@Override
