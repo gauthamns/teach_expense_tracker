@@ -2,19 +2,19 @@
 
 The project is divided into 4 sections (4 mini projects) together constituting one Expense tracker project. 
 
-Section 1:<br/>
+<b>Section 1:</b><br/>
   Add expense screen and display the contents submitted in a toast message.
   Concepts: Activity lifecycle, simple layout, toast messages.
 
-Section 2:<br/>
+<b>Section 2:</b><br/>
   2nd screen showing the expense added.
   Concepts: Intents and passing data between activities.
 
-Section 3:<br/> 
+<b>Section 3:</b><br/> 
   Store expenses in a database.
   Concepts: Creating Sqlite db, Wiring the connection, Sqlite Helper, Inserting database records.
 
-Section 4:<br/>
+<b>Section 4:</b><br/>
   Retrieving data from Database and displaying in a list view. Open detail screen of a record from the list view.
   Concepts: List view, Binding db with list view, Adapter passing values b/w intents.
   
