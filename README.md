@@ -43,6 +43,13 @@ This will allow us to maintain the continuity of the project from one section to
 
 <h4>Things to consider</h4>
 In the list view, date is shown as long value. Showing proper date will require the use of ViewBinder and might be given as an advanced exercise.
-Use of CustomViewBinder here: http://enjoyandroid.wordpress.com/2012/03/12/customizing-simple-cursor-adapter/
+Use of CustomViewBinder here: http://enjoyandroid.wordpress.com/2012/03/12/customizing-simple-cursor-adapter/ <br/>
 We can use a DatePicker to indicate the date of the expense. Time and effort(although not significant) for adding date field makes it an advanced exercise.
  
+<h4>How to use(For Blrdroid teach training)</h4>
+Clone the project using git clone git@github.com:gauthamns/teach_expense_tracker.git<br/>
+Take up sections one by one. While teaching each section, checkout the corresponding section.<br/>
+Example: While teaching section 1, git checkout section1<br/>
+While teaching section 2, git checkout section2<br/>
+
+
