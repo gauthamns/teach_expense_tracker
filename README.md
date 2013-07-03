@@ -32,7 +32,7 @@ bleeding-edge (Goes further. For enthusiasts)
 <h4>How to contribute:</h4>
   As you might have observed from the above, sections should be taken up in the same order. And hence contribution also will happen in the same order.
   
-<h4>What does that mean?</h4>
+<b>What does that mean?</b>
   You can only merge a branch with its previous branch. If you make any changes to section1, it should be merged with section2 and goes the order.<br/>
 section1 -> section2<br/>
 section2 -> section3<br/>
