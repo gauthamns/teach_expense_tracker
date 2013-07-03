@@ -16,7 +16,7 @@ The project is divided into 4 sections (4 mini projects) together constituting o
 
 <b>Section 4:</b><br/>
   Retrieving data from Database and displaying in a list view. Open detail screen of a record from the list view.
-  Concepts: List view, Binding db with list view, Adapter passing values b/w intents.
+  Concepts: List view, Binding db with list view, Adapter passing values b/w intents, using menu for going to list.
   
 
 How to use this project:
