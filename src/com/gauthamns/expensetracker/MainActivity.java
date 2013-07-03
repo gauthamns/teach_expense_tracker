@@ -3,6 +3,7 @@ package com.gauthamns.expensetracker;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -35,7 +36,7 @@ public class MainActivity extends Activity {
 		String note = noteEdit.getText().toString();
 
 		// Get double of amount.
-		if (amountStr != null) {
+		if (TextUtils.isEmpty(amountStr)) {
 			Toast.makeText(this, "Please enter the amount", Toast.LENGTH_SHORT)
 					.show();
 			return;
