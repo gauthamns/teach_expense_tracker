@@ -27,16 +27,20 @@ public class MainActivity extends Activity {
 	 * @param v
 	 */
 	public void onSaveExpense(View v) {
+
+		String amountStr = "";
+		String note = "";
+
+		Calendar cal = Calendar.getInstance();
+		cal.setTimeInMillis(System.currentTimeMillis());
+
 		// Obtain the views.
 		EditText amountEdit = (EditText) findViewById(R.id.editText1);
 		EditText noteEdit = (EditText) findViewById(R.id.editText2);
 
 		// Obtain data from the views
-		String amountStr = amountEdit.getText().toString();
-		String note = noteEdit.getText().toString();
-
-		Calendar cal = Calendar.getInstance();
-		cal.setTimeInMillis(System.currentTimeMillis());
+		amountStr = amountEdit.getText().toString();
+		note = noteEdit.getText().toString();
 
 		// Show in a toast message using Toast.
 		String text = "Amount: " + amountStr + "\nNote: " + note + "\nDate: "
