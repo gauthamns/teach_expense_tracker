@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
 		// Obtain data from the views
 		String amountStr = amountEdit.getText().toString();
 		String note = noteEdit.getText().toString();
+		long timeMillis = System.currentTimeMillis();
 
 		// Get double of amount.
 		if (TextUtils.isEmpty(amountStr)) {
@@ -48,7 +49,7 @@ public class MainActivity extends Activity {
 		Intent i = new Intent(this, ShowActivity.class);
 		i.putExtra("amount", amount);
 		i.putExtra("note", note);
-		i.putExtra("date", System.currentTimeMillis());
+		i.putExtra("date", timeMillis);
 		startActivity(i);
 	}
 

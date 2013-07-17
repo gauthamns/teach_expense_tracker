@@ -15,20 +15,21 @@ public class ShowActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_show);
 
+		TextView amountText = (TextView) findViewById(R.id.textView1);
+		TextView noteText = (TextView) findViewById(R.id.textView2);
+		TextView dateText = (TextView) findViewById(R.id.textView3);
+
+		Calendar cal = Calendar.getInstance();
+
 		Intent i = getIntent();
 		double amount = i.getDoubleExtra("amount", 0);
 		String note = i.getStringExtra("note");
 		long time = i.getLongExtra("date", System.currentTimeMillis());
 
-		TextView amountText = (TextView) findViewById(R.id.textView1);
-		TextView noteText = (TextView) findViewById(R.id.textView2);
-		TextView dateText = (TextView) findViewById(R.id.textView3);
-
 		// Set the values.
 		amountText.setText(String.valueOf(amount));
 		noteText.setText(note);
 
-		Calendar cal = Calendar.getInstance();
 		cal.setTimeInMillis(time);
 		dateText.setText(cal.getTime().toString());
 	}
