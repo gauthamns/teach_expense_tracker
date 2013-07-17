@@ -47,10 +47,6 @@ public class MainActivity extends Activity {
 
 		// Show Expenses in ShowActivity.
 		Intent i = new Intent(this, ShowActivity.class);
-		i.putExtra("amount", amount);
-		i.putExtra("note", note);
-		i.putExtra("date", timeMillis);
-		startActivity(i);
 	}
 
 	@Override

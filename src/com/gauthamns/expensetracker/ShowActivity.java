@@ -22,15 +22,8 @@ public class ShowActivity extends Activity {
 		Calendar cal = Calendar.getInstance();
 
 		Intent i = getIntent();
-		double amount = i.getDoubleExtra("amount", 0);
-		String note = i.getStringExtra("note");
-		long time = i.getLongExtra("date", System.currentTimeMillis());
 
 		// Set the values.
-		amountText.setText(String.valueOf(amount));
-		noteText.setText(note);
-
-		cal.setTimeInMillis(time);
 		dateText.setText(cal.getTime().toString());
 	}
 
