@@ -6,7 +6,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -33,14 +32,6 @@ public class MainActivity extends Activity {
 
 		Calendar cal = Calendar.getInstance();
 		cal.setTimeInMillis(System.currentTimeMillis());
-
-		// Obtain the views.
-		EditText amountEdit = (EditText) findViewById(R.id.editText1);
-		EditText noteEdit = (EditText) findViewById(R.id.editText2);
-
-		// Obtain data from the views
-		amountStr = amountEdit.getText().toString();
-		note = noteEdit.getText().toString();
 
 		// Show in a toast message using Toast.
 		String text = "Amount: " + amountStr + "\nNote: " + note + "\nDate: "
