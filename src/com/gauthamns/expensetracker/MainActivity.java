@@ -1,7 +1,6 @@
 package com.gauthamns.expensetracker;
 
 import android.app.Activity;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -69,13 +68,7 @@ public class MainActivity extends Activity {
 		MySQLiteHelper dbHelper = new MySQLiteHelper(this);
 		SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-		// Create content values.
-		ContentValues values = new ContentValues();
-		values.put(MySQLiteHelper.COLUMN_AMOUNT, amount);
-		values.put(MySQLiteHelper.COLUMN_NOTE, note);
-		values.put(MySQLiteHelper.COLUMN_CREATED_AT, time);
-
-		return db.insert(MySQLiteHelper.TABLE_EXPENSES, null, values);
+		return 0;
 	}
 
 	@Override
