@@ -1,5 +1,36 @@
 <h3>A simple expense tracker application written for Blrdroid teach programs.</h3>
 
+<b>Prerequisites For Android WorkShop</b><br>
+<ol>
+<li>
+All the attendees must have basic java programming knowledge.</li>
+<li>All the systems must be connected to internet.</li>
+<li>The lab which is used to conduct the workshop must have a projector.</li>
+<li>The session speaker must be provided with a collar mic.</li>
+<li>Setting up the Development Environment:
+All the systems used by attendees must have jdk 1.6 installed.<br>
+<strong>Installation on Windows</strong><br>
+http://docs.oracle.com/javase/7/docs/webnotes/install/windows/jdk-installation-windows.html#requirements
+<strong>Installation on Linux</strong><br>
+http://docs.oracle.com/javase/7/docs/webnotes/install/linux/linux-jdk.html<br><br>
+
+The above links provide all the details regarding system requirements and setting up of jdk1.6 on your windows<br>
+<b>Linux machine.</b><br>
+After successful installation of jdk to check if java is now installed on your machine or not go to terminal and type java and enter it will give the details of the jdk installed.
+</li>
+
+<li>All the systems used by attendees must be having an IDE  (Eclipse/ Android studio) set up and running with a sample hello world project.</li>
+<li>Eclipse ADT download link - http://developer.android.com/sdk/index.html
+Android Studio Download link - http://developer.android.com/sdk/installing/studio.html</li>
+<li>Now let us create a sample application and run it.
+Creating your first Application
+http://developer.android.com/training/basics/firstapp/creating-project.html
+Running your First Application
+http://developer.android.com/training/basics/firstapp/running-app.html
+Now you can see Hello world in the emulator and your system is ready for workshop. 
+</li>
+</ol>
+
 The project is divided into 4 sections (4 mini projects) together constituting one Expense tracker project. 
 
 <b>Section 1:</b><br/>
