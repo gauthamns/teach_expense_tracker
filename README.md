@@ -31,6 +31,8 @@ Now you can see Hello world in the emulator and your system is ready for worksho
 </li>
 </ol>
 
+<h3>About the project. (Mainly for Instructors)</h3>
+
 The project is divided into 4 sections (4 mini projects) together constituting one Expense tracker project. 
 
 <b>Section 1:</b><br/>
